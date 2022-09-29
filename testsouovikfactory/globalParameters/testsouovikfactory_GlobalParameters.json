@@ -1,1 +1,6 @@
-{}
+{
+	"storageaccountname": {
+		"type": "string",
+		"value": "projectlake1134"
+	}
+}
