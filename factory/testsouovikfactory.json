@@ -1,5 +1,13 @@
 {
 	"name": "testsouovikfactory",
+	"properties": {
+		"globalParameters": {
+			"storageaccountname": {
+				"type": "string",
+				"value": "projectlake1134"
+			}
+		}
+	},
 	"location": "eastus",
 	"identity": {
 		"type": "SystemAssigned",
