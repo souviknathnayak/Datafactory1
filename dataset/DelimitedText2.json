@@ -3,7 +3,23 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"storageaccount1": {
+					"value": "@dataset().storageaccountname",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"storageaccountname": {
+				"type": "String",
+				"defaultValue": "projectlake1134"
+			},
+			"container": {
+				"type": "String",
+				"defaultValue": "containerproject"
+			}
 		},
 		"annotations": [],
 		"type": "DelimitedText",
@@ -11,7 +27,10 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "test.csv",
-				"container": "containerproject"
+				"container": {
+					"value": "@dataset().container",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
