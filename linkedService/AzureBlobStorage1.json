@@ -12,10 +12,6 @@
 				},
 				"secretName": "Blob"
 			}
-		},
-		"connectVia": {
-			"referenceName": "integrationRuntimeDev",
-			"type": "IntegrationRuntimeReference"
 		}
 	}
 }
