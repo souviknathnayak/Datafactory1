@@ -13,7 +13,7 @@
 			"connectionString": {
 				"type": "AzureKeyVaultSecret",
 				"store": {
-					"referenceName": "AzureKeyVault2",
+					"referenceName": "AzureKeyVault1",
 					"type": "LinkedServiceReference"
 				},
 				"secretName": "Blob"
