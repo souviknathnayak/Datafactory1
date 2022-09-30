@@ -1,16 +1,6 @@
 {
 	"name": "DelimitedText2",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "AzureBlobStorage1",
-			"type": "LinkedServiceReference",
-			"parameters": {
-				"storageaccount1": {
-					"value": "@dataset().storageaccountname",
-					"type": "Expression"
-				}
-			}
-		},
 		"parameters": {
 			"storageaccountname": {
 				"type": "String",
