@@ -10,8 +10,14 @@
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
-			"serviceEndpoint": "https://projectlake1134.blob.core.windows.net/",
-			"accountKind": "StorageV2"
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault2",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "Blob"
+			}
 		},
 		"connectVia": {
 			"referenceName": "integrationRuntimeDev",
